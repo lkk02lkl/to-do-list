@@ -1,0 +1,422 @@
+:root {
+  --purple: #c471ed;
+  --bg-color2: #1e1e29;
+  --bg-color1: #16161e;
+  --bg-color3: #27293d;
+  --txt-color: white;
+  --red: #DB4437;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left-sidebar-container {
+  background: var(--bg-color2);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  color: var(--txt-color);
+}
+
+.profile {
+  display: flex;
+  background: var(--bg-color3);
+  margin: 15px 10px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.profile img {
+  width: 55px;
+  height: 55px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin-left: 5px;
+  background: var(--purple);
+  cursor: pointer;
+}
+
+.info-profile {
+  padding: 10px;
+}
+
+.info-profile h1{
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.info-profile p{
+  font-size: 12px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  background: var(--bg-color3);
+  margin: 0 10px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px 0;
+  justify-content: center;
+}
+
+.login button {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 0;
+  color: var(--txt-color);
+  cursor: pointer;
+}
+
+.search-tasks {
+  background: var(--bg-color3);
+  margin: 15px 10px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-tasks input {
+  background: transparent;
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+
+::placeholder {
+  font-size: 20px;
+  text-align: left;
+}
+
+.search-tasks i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.list-tasks {
+  background: var(--bg-color3);
+  margin: 15px 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+  margin-bottom: 0;
+}
+
+.header h1 {
+  font-size: 20px;
+}
+
+.header i {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.list-tasks hr {
+  margin: 0;
+  margin: 0 10px;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+.tasks-in-the-list {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.tasks-in-the-list i {
+  font-size: 20px;
+  color: var(--purple);
+  padding: 10px;
+  padding-right: 0;
+}
+
+.tasks-in-the-list h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px;
+}
+
+.tasks-in-the-list:hover,
+.tasks-in-the-list:active {
+  background: var(--bg-color1);
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-todo-container {
+  background: var(--bg-color1);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-task {
+  display: flex;
+  background: var(--bg-color3);
+  margin: 15px 10px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 10px 5px;
+  justify-content: space-between;
+}
+
+.main-task div {
+  display: flex;
+  align-items: center;
+}
+
+
+.main-task div i {
+  color: var(--purple);
+  font-size: 25px;
+}
+
+.main-task h3 {
+  color: var(--txt-color);
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+.fa-ellipsis {
+   margin-right: 10px;
+   color: var(--txt-color);
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.check-up-tasks {
+  background: var(--bg-color2);
+  border-radius: 5px;
+  margin: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--txt-color);
+}
+
+.check-up-tasks:hover {
+  background: var(--bg-color3);
+}
+
+.check-up-tasks button {
+  border: 3px solid var(--purple);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/* 
+.check-up-tasks button.active {
+  background: var(--purple);
+} */
+
+.check-up-tasks div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin: 10px 0;
+}
+
+.check-up-tasks div h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.check-up-tasks div p {
+  font-size: 10px;
+  margin: 0;
+}
+.check-up-tasks div p i {
+  padding: 5px 0;
+  margin-right: 5px;
+}
+
+
+
+.footer {
+  background: var(--bg-color3);
+  color: var(--txt-color);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.footer h1 {
+  color: gray;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+.right-sidebar-container {
+  background: var(--bg-color2);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.check-up-tasks-details {
+  background: var(--bg-color3);
+  border-radius: 5px;
+  margin: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--txt-color);
+}
+
+.check-up-tasks-details button {
+  border: 3px solid var(--purple);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.check-up-tasks-details div h4 {
+  font-size: 20px;
+  margin: 15px 5px;
+  cursor: pointer;
+}
+
+.check-up-tasks-details i {
+  color: var(--purple);
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.check-up-tasks-details div .date {
+  font-weight: 400;
+  color: gray;
+  font-size: 16px;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color3);
+  border-radius: 5px;
+  margin: 15px 10px;
+  cursor: pointer;
+}
+
+.notes div {
+  display: flex;
+  align-items: center;
+}
+
+.notes i {
+  color: var(--purple);
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.notes div h4 {
+  color: var(--txt-color);
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.notes p {
+  color: gray;
+  margin: 0 10px 15px;
+  font-size: 12px;
+}
+
+.delete-or-save {
+  margin: 0 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-or-save button {
+  border: none;
+  background: var(--bg-color3);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.delete-or-save button:active {
+  background: var(--bg-color2);
+}
+
+.save {
+  color: var(--purple);
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.delete {
+  color: var(--red);
+  font-weight: 800;
+  font-size: 25px;
+}
+
+@media (max-width: 765px) {
+  .right-sidebar-container {
+    display: none;
+  }
+
+  .left-sidebar-container {
+    display: none;
+  }
+
+ 
+}
